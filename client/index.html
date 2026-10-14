@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MaintFlow: gerenciamento genérico de ordens de manutenção">
+  <title>MaintFlow | Operações de manutenção</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#dashboard" aria-label="MaintFlow início"><span class="brand-mark">MF</span><span>MaintFlow</span></a>
+      <nav class="side-nav" aria-label="Navegação principal">
+        <a href="#dashboard" data-view="dashboard">Visão geral</a>
+        <a href="#orders" data-view="orders">Ordens</a>
+        <a href="#new" data-view="new">Nova ordem</a>
+      </nav>
+      <div class="sidebar-foot"><span class="eyebrow">AMBIENTE DEMO</span><p>Dados sintéticos para demonstração.</p></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><button id="menuToggle" class="icon-button" aria-label="Abrir menu">☰</button><div><span class="eyebrow">CENTRO DE OPERAÇÕES</span><h1 id="pageTitle">Visão geral</h1></div><label class="role-picker">Atuando como <select id="roleSelect"><option>Planejador</option><option>Supervisor</option><option>Técnico</option></select></label></header>
+      <div id="toastRegion" class="toast-region" aria-live="polite"></div>
+      <section id="view" class="content" aria-live="polite"></section>
+    </main>
+  </div>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

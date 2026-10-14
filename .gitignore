@@ -1,0 +1,6 @@
+node_modules/
+server/database/*.sqlite
+server/database/*.sqlite-*
+.env
+reference/
+coverage/
